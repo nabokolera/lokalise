@@ -1,11 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Graphik LC TT';
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'GraphikLCG';
 }
 
 .container{
-    width:1290px;
+    max-width:1290px;
     margin:0 auto;
 }
 
@@ -13,13 +17,14 @@
     text-decoration: none;
 }
 
-ul li {
+li {
     list-style-type: none;
 }
 
 
+
 .header {
-    height: 95px;
+    min-height: 95px;
     display: flex;
     align-items: center;
 }
@@ -30,7 +35,9 @@ ul li {
     line-height: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 51px;
+    flex-wrap: wrap;
 
 }
 
@@ -41,14 +48,16 @@ ul li {
 .header-btns {
     width: 250px;
     margin-left: auto;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 button {
     height: 45px;
     width: 120px;
-    border: 1px solid;
 }
+
 .btn{
     font-weight: 600;
     font-size: 16px;
@@ -64,32 +73,29 @@ button {
     background-color: #FF6336;
     color: white;
     text-align: center;
-    border: none;
+    border: 1px solid #FF6336;
 }
 
-
-
-
-
-
-
-
-.conteiner {
+.demo-lokalise{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 860px;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
+    padding:130px 0 180px 0;
 }
 
-.content {
+.demo-lokalise img{
+    width: 760px;
+    height: 530px;
+}
+
+
+.demo-content {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    gap: 50px;
+    height: 610px;
+    width:500px;
 }
 
 .free {
@@ -97,15 +103,17 @@ button {
     height: 60px;
     color: white;
     background-color: #FF6336;
+    border: 1px solid #FF6336;
 }
 
 .book {
     width: 160px;
     height: 60px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.cnt-item {
-    /* height: 210px; */
+.cnt-head {
     width: 552px;
     font-size: 65px;
     font-weight: 600;
@@ -115,25 +123,27 @@ button {
 .cnt-text {
     width: 470px;
     font-size: 25px;
+    line-height: 35px;
 }
 
-.under-text {
+.btns {
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footnote {
     font-size: 15px;
-}
-
-.pic {
-    width: 760px;
-    height: 530px;
+    line-height: 25px;
 }
 
 
 
-
-.bg-ye {
+.bg-orange {
     height: 350px;
     background-color: #FF9C7D;
     padding-top: 100px;
-
 
 }
 
@@ -148,19 +158,28 @@ button {
 .item-brand {
     display: flex;
     justify-content: center;
-    height: 200px;
-    align-self: center;
-
+    align-items: center;
 
 }
 
 .brand {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 70px;
 }
 
-
+.tidal .daimer{
+    width: 150px;
+    height: 20px;
+    align-items: center;
+}
+.yelp{
+    width: 107px;
+    height: 50px;
+    align-items: center;
+}
 
 
 
@@ -168,13 +187,15 @@ button {
 .cart-item {
     font-weight: 600;
     font-size: 50px;
-    width: 379px;
-    line-height: 60px
+    width: 380px;
+    line-height: 60px;
+    margin-bottom: 30px;
 }
 
 .link {
     font-size: 20px;
     font-weight: 600;
+    margin-top: 35px;
 }
 
 p a {
@@ -189,9 +210,9 @@ p a {
     padding-top: 90px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .card-story {
@@ -199,7 +220,6 @@ p a {
     flex-direction: column;
     line-height: 70px;
     align-self: center;
-    height: 100%;
 }
 
 .card-picture {
@@ -213,10 +233,6 @@ p a {
     text-decoration: underline;
 }
 
-.cart-item {
-    width: 500px;
-
-}
 
 .story {
     font-size: 20px;
@@ -226,32 +242,26 @@ p a {
 
 
 
-
-
-
-
-.bg-lightye {
-    padding-top: 120px;
-    min-height: 1053px;
-    max-height: 2500px;
+.bg-biege {
     background-color: #FFF8E4;
-    padding-bottom: 70px;
+    height: 1033px;
+
 }
 
-.item-icon {
+.header-biege {
     display: flex;
     justify-content: center;
     font-weight: 600;
     font-size: 50px;
+    line-height: 60px;
+    padding-top: 120px;
 }
 
 .block {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 80px;
 
 }
 
@@ -260,7 +270,12 @@ p a {
     height: 294px;
 }
 
-.block-icon div {
+.icon {
+    width: 160px;
+    height: 120px;
+}
+
+div.block-icon {
     text-align: center;
 }
 
@@ -269,27 +284,20 @@ p a {
     font-size: 25px;
     line-height: 35px;
     text-align: center;
+    margin: 25px;
 }
 
-.icon {
-    width: 160px;
-    height: 120px;
-
-}
 
 .block-text {
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
 }
 
 
-
-
-
-.bg-wh {
-    padding-top: 150px;
-    padding-bottom: 70px;
+.bg-white {
+    padding-top: 155px;
 }
 
 .box-item {
@@ -304,29 +312,33 @@ p a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 150px;
+    padding-top: 75px;
+    padding-bottom: 185px;
 }
 
 .box {
     width: 410px;
-    margin: 0 auto;
+    
 }
 
 .box-img {
     height: 185px;
     width: 190px;
-    /* margin-bottom: 20px; */
+    
 }
 
 .box-list {
     font-size: 30px;
     font-weight: 600;
+    line-height: 40px;
+    margin-top: 50px;
 }
 
 .box-text {
     font-size: 20px;
     line-height: 30px;
     width: 410px;
+    margin: 34px 0 25px;
 }
 
 .box-link {
@@ -340,14 +352,15 @@ p a {
 
 
 
-
-
-.bg-bl {
+.bg-blue {
     background-color: #C9E8F2;
+}
+.revolut-box{
     display: flex;
-    height: 470px;
-    justify-content: space-around;
-    align-items: center;
+    height: 310px;
+    justify-content: space-between;
+    padding-top: 63px;
+    padding-bottom: 105px;
 }
 
 .bl-text {
@@ -357,19 +370,20 @@ p a {
 }
 
 .bl-name {
+    font-weight: 400;
     font-size: 15px;
+    line-height: 25px;
+    margin: 23px auto 14px;
 }
 
-.photo img {
+.bl-photo img {
     height: 310px;
     width: 310px;
 }
 
 
 
-
-
-.bg-br {
+.bg-brown {
     background-color: #DABC98;
     height: 332px;
 
@@ -377,15 +391,18 @@ p a {
 
 .br-cake {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items:center;
     height: 100%;
 }
 
-.bg-br p {
+.p-cake {
     font-size: 35px;
     font-weight: 600;
     width: 461px;
+    height: 168px;
+    line-height: 50px;
+    border-right: 1px solid #000000;
 }
 
 .cake {
@@ -394,10 +411,39 @@ p a {
 }
 
 .star {
-    width: 481px;
-    height: 168px;
+    width: 128px;
+    height: 20px;
 }
 
+.g2 p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+.capterra p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+.g2 {
+    display: flex;
+    flex-direction: column;
+    height: 116px;
+    align-items:flex-start;
+    justify-content:space-around;
+}
+
+.capterra {
+    display: flex;
+    flex-direction: column;
+    height: 116px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
 
 
 
@@ -411,7 +457,7 @@ p a {
     justify-content: center;
 }
 
-.bird-item {
+.bird-head {
     font-size: 65px;
     font-weight: 600px;
     line-height: 75px;
@@ -426,7 +472,7 @@ p a {
     text-align: center;
 }
 
-.bird-img img {
+.bird-img{
     height: 445px;
     width: 1023px;
 }
@@ -434,46 +480,47 @@ p a {
 .btn-bird {
     color: white;
     background-color: #FF6336;
+    border:none;
     width: 193px;
+    font-weight: 600;
+    font-size: 16px;
     height: 60px;
 }
 
 
 
 
-.bg-peach {
+.lokalise-free {
     background-color: #FF9C7D;
     height: 603px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
 }
 
-.peach-item {
+.free-head {
     font-size: 65px;
     font-weight: 600;
     line-height: 75px;
-    margin: 0 auto;
     width: 784px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.peach-text {
+.free-text {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    margin-bottom: 55px;
 }
 
-.peach-btn {
+.free-btn {
     background-color: black;
+    border: 1px black solid;
     color: white;
     font-size: 17px;
     font-weight: 600;
-    line-height: 60px;
-    border: 1px black solid;
     width: 160px;
     height: 60px;
 }
@@ -486,13 +533,19 @@ button a {
 
 
 .bg-footer {
-    padding-top: 95px;
-    padding-bottom: 80px;
+    padding-top: 92px;
+    padding-bottom: 95px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    
+}
+
+.ft-header {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 28px;
 }
 
 .footer-content li {
@@ -501,19 +554,13 @@ button a {
 
 }
 
-.content-item {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 50px;
-}
-
 .content-picture {
-    height: 300px;
     width: 300px;
+    height: 300px;
 }
 
-.content-logo {
-    margin-top: 20px;
+.specialized-logo {
+    margin: 31px 0 11px 0;
     height: 32px;
     width: 80px;
 }
@@ -522,6 +569,8 @@ button a {
     width: 290px;
     font-size: 20px;
     line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .content-link {
@@ -529,10 +578,12 @@ button a {
     font-weight: 600;
 }
 
-.fr-list {
+
+.footer-content h4 {
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
+    margin-bottom: 20px;
 }
 
 .footer-list {
@@ -542,38 +593,50 @@ button a {
     flex-wrap: wrap;
 }
 
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
 
 
+.bg-grey {
+    background-color: #EEEEEE;
+}
 
-
+.ft-border {
+    border-top: 1px solid #000000;
+}
 
 .ft {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
 
-.ft-text {
-    width: 300px;
+.ft-left{
+    display: flex;
+    align-items: center;
+    gap:14px;
 }
 
-
-
-.ft-year p {
-    width: 109px;
+.ft-left p {
+    display: inline-block;
+    width: 250px;
+    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
 }
 
+.ft-right{
+    margin-right: 75px;
+}
 
-
-.bg-footer {
-    display: flex;
-    justify-content: space-around;
-
-    padding-bottom: 30px;
-    padding-top: 30px;
+.ft-right p {
+    width: 109px;
+    font-size: 12px;
+    line-height: 15px;
 }

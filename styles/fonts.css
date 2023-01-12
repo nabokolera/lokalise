@@ -2,20 +2,12 @@
     font-family: 'GraphikLCG';
     font-weight: 400;
     font-style: normal;
-    src: local('GraphikLCG'),
-        url('./styles/fonts/GraphikLCG-Regular.ttf') format('ttf'),
-        url('./styles/fonts/GraphikLCG-Regular.woff') format('woff'),
-        url('./styles/fonts/GraphikLCG-Regular.woff2') format('woff2');
-    font-display: swap;
+    src: url(..fonts/GraphikLCG-Regular.ttf) format('ttf');
 }
 
 @font-face {
     font-family: 'GraphikLCG';
     font-weight: 600;
     font-style: normal;
-    src: local('GraphikLCG'),
-        url('./styles/fonts/GraphikLCG-Semibold.ttf') format('ttf'),
-        url('./styles/fonts/GraphikLCG-Semibold.woff') format('woff'),
-        url('./styles/fonts/GraphikLCG-Semibold.woff2') format('woff2');
-    font-display: swap;
+    src: url(..fonts/GraphikLCG-Semibold.ttf) format('ttf');
 }
